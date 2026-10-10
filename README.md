@@ -150,11 +150,14 @@ Verified on hardware (FoloToy AI Passport, ESP32-C3 revision v1.1, 8 MB Flash, n
 - The idle thresholds were measured from the log rather than by eye: backlight 50 % at
   60.7 s idle and 0 % at 180.8 s idle, each within one 100 ms tick of its 1-minute or
   3-minute setting.
+- Waking a dark screen was checked by hand: pressing a key lights it again without
+  disturbing the play.
 
-Still unverified: how the first press behaves after the screen has gone dark in the hand
-(nobody has pressed a key while it was dark yet), longer-run stability of this revision,
-battery life, beep continuity, runtime memory headroom, and whether the ring misleads
-anyone into walking in a particular direction.
+Still unverified: two wake sub-cases were not exercised separately (a long OK press during
+the first press after the screen went dark, and the menu's brightness after leaving the
+play from a dark screen), along with longer-run stability of this revision, battery life,
+beep continuity, runtime memory headroom, and whether the ring misleads anyone into walking
+in a particular direction.
 
 ## License
 
